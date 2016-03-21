@@ -91,10 +91,7 @@ do_configure() {
         -after ${EXTRA_QMAKEVARS_POST}
 }
 
-do_install_append() {
-    rmdir ${D}${OE_QMAKE_PATH_PLUGINS}/${BPN} ${D}${OE_QMAKE_PATH_PLUGINS} || true
-    sed -i 's@ -Wl,--start-group.*-Wl,--end-group@@g; s@-L${B}[^ ]* @ @g' ${D}${libdir}/pkgconfig/Qt5WebEngineCore.pc
-}
+
 PACKAGE_DEBUG_SPLIT_STYLE = "debug-without-src"
 
 # for /usr/share/qt5/qtwebengine_resources.pak
