@@ -81,6 +81,7 @@ SRC_URI += " \
     file://0004-Generate-usable-qmake_extras.gypi.patch \
     file://0001-chromium-base.gypi-include-atomicops_internals_x86_g.patch \
     file://0002-chromium-third_party-boringssl-Demand-for-newer-POSI.patch \
+    file://0002-chromium-Change-false-to-FALSE-and-1-to-TRUE-FIX-qtw.patch \
 "
 SRCREV_qtwebengine = "ce095e94b686196629244073990530441b9b5f4f"
 SRCREV_chromium = "146ebe26dce3289eb440bed7d5d0a7988ff5f5c9"
